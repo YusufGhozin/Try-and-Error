@@ -1,4 +1,4 @@
-# Install MongoDB di Arch Linux dan Penggunaannya (Step-by-Step)
+# Install MongoDB di Arch Linux & Penggunaan Dasarnya (Step-by-Step)
 
 Ringkasan: MongoDB dikeluarkan dari repos resmi Arch karena lisensi. instalasi umum di Arch dilakukan lewat AUR, bisa membangun dari source atau memakai paket prebuilt (`mongodb-bin`). kalo untuk shell, bisa pakai `mongosh` (bukan `mongo`).
 

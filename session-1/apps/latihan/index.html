@@ -1,141 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Website</title>
-    <style>
-        /* Reset dasar */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        /* Animasi gradient bergerak */
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        /* Body futuristik */
-        body {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e, #0f0c29);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
-            color: #00ffea;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        /* Header neon */
-        h1 {
-            font-size: 4rem;
-            color: #00ffea;
-            text-shadow: 0 0 5px #00ffea, 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 40px #00ffea;
-            margin-bottom: 20px;
-            transition: 0.3s ease;
-        }
-
-        h1:hover {
-            color: #ff00ff;
-            text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
-        }
-
-        /* Paragraf dengan glow & hover */
-        p {
-            font-size: 1.5rem;
-            margin: 10px 0;
-            color: #39ff14;
-            text-shadow: 0 0 5px #39ff14;
-            transition: 0.3s ease;
-        }
-
-        p:hover {
-            color: #ffea00;
-            text-shadow: 0 0 10px #ffea00, 0 0 20px #ffea00;
-        }
-
-        /* Tombol futuristik */
-        .btn {
-            margin-top: 30px;
-            padding: 15px 40px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #fff;
-            background: linear-gradient(45deg, #ff00ff, #00ffff);
-            border: none;
-            border-radius: 15px;
-            cursor: pointer;
-            box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
-            transition: all 0.3s ease;
-            animation: pulse 2s infinite;
-        }
-
-        .btn:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 40px #ff00ff, 0 0 60px #00ffff;
-        }
-
-        @keyframes pulse {
-            0% { box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff; }
-            50% { box-shadow: 0 0 30px #ff00ff, 0 0 60px #00ffff; }
-            100% { box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff; }
-        }
-
-        /* Navigasi futuristik */
-        nav {
-            position: absolute;
-            top: 20px;
-            right: 40px;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #00ffea;
-            font-weight: bold;
-            padding: 8px 15px;
-            border-radius: 8px;
-            transition: 0.3s ease;
-            border: 1px solid #00ffea;
-        }
-
-        nav a:hover {
-            background-color: #00ffea;
-            color: #0f0c29;
-            box-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea;
-        }
-
-        /* Footer futuristik */
-        footer {
-            position: absolute;
-            bottom: 20px;
-            font-size: 0.9rem;
-            color: #888;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Website</title>
+  <!-- Hubungkan ke file CSS eksternal -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header -->
+  <header>
+    <h1>Perpustakaan Digital</h1>
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <h1>Try and Error</h1>
-    <p>Mencoba untuk membuat website sederhana yang digunakan sebagai latihan</p>
-    <p>Segala kekurangan mohon dimaklumi</p>
-    <button class="btn">Explore</button>
+  <!-- Konten Utama -->
+  <main>
+    <section class="container" id="home">
+      <h2>Selamat Datang</h2>
+      <p>
+        Perpustakaan Digital adalah perpustakaan dengan koleksi dominan berbentuk
+        digital, bukan fisik seperti dahulu.
+      </p>
+      <p>
+        Segala kekurangan mohon dimaklumi.
+      </p>
+      <button class="btn">Jelajahi</button>
+    </section>
 
-    <footer>© 2025 Muhammad Yusuf Ghozin</footer>
+    <!-- Tambahan section untuk About -->
+    <section class="container" id="about">
+      <h2>Tentang Kami</h2>
+      <p>
+        Kami berkomitmen menghadirkan akses koleksi digital yang luas,
+        mulai dari e-book, jurnal elektronik, hingga arsip digital.
+      </p>
+    </section>
+
+    <!-- Tambahan section untuk Contact -->
+    <section class="container" id="contact">
+      <h2>Kontak</h2>
+      <p>Email: info@perpustakaandigital.com</p>
+      <p>Telepon: +62 812-3456-7890</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Muhammad Yusuf Ghozin. Semua Hak Dilindungi.
+  </footer>
 </body>
 </html>
